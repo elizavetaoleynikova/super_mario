@@ -251,10 +251,24 @@ CMakeFiles/super_mario.dir/model/rect_map_movable_adapter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/super_mario.dir/model/rect_map_movable_adapter.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/github/super_mario/src/model/rect_map_movable_adapter.cpp -o CMakeFiles/super_mario.dir/model/rect_map_movable_adapter.cpp.s
 
+CMakeFiles/super_mario.dir/model/movable_platform.cpp.o: CMakeFiles/super_mario.dir/flags.make
+CMakeFiles/super_mario.dir/model/movable_platform.cpp.o: /mnt/d/github/super_mario/src/model/movable_platform.cpp
+CMakeFiles/super_mario.dir/model/movable_platform.cpp.o: CMakeFiles/super_mario.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/d/github/super_mario/src/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/super_mario.dir/model/movable_platform.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/super_mario.dir/model/movable_platform.cpp.o -MF CMakeFiles/super_mario.dir/model/movable_platform.cpp.o.d -o CMakeFiles/super_mario.dir/model/movable_platform.cpp.o -c /mnt/d/github/super_mario/src/model/movable_platform.cpp
+
+CMakeFiles/super_mario.dir/model/movable_platform.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/super_mario.dir/model/movable_platform.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/github/super_mario/src/model/movable_platform.cpp > CMakeFiles/super_mario.dir/model/movable_platform.cpp.i
+
+CMakeFiles/super_mario.dir/model/movable_platform.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/super_mario.dir/model/movable_platform.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/github/super_mario/src/model/movable_platform.cpp -o CMakeFiles/super_mario.dir/model/movable_platform.cpp.s
+
 CMakeFiles/super_mario.dir/objects/full_box.cpp.o: CMakeFiles/super_mario.dir/flags.make
 CMakeFiles/super_mario.dir/objects/full_box.cpp.o: /mnt/d/github/super_mario/src/objects/full_box.cpp
 CMakeFiles/super_mario.dir/objects/full_box.cpp.o: CMakeFiles/super_mario.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/d/github/super_mario/src/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/super_mario.dir/objects/full_box.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/d/github/super_mario/src/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/super_mario.dir/objects/full_box.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/super_mario.dir/objects/full_box.cpp.o -MF CMakeFiles/super_mario.dir/objects/full_box.cpp.o.d -o CMakeFiles/super_mario.dir/objects/full_box.cpp.o -c /mnt/d/github/super_mario/src/objects/full_box.cpp
 
 CMakeFiles/super_mario.dir/objects/full_box.cpp.i: cmake_force
@@ -268,7 +282,7 @@ CMakeFiles/super_mario.dir/objects/full_box.cpp.s: cmake_force
 CMakeFiles/super_mario.dir/objects/enemy.cpp.o: CMakeFiles/super_mario.dir/flags.make
 CMakeFiles/super_mario.dir/objects/enemy.cpp.o: /mnt/d/github/super_mario/src/objects/enemy.cpp
 CMakeFiles/super_mario.dir/objects/enemy.cpp.o: CMakeFiles/super_mario.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/d/github/super_mario/src/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/super_mario.dir/objects/enemy.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/d/github/super_mario/src/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/super_mario.dir/objects/enemy.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/super_mario.dir/objects/enemy.cpp.o -MF CMakeFiles/super_mario.dir/objects/enemy.cpp.o.d -o CMakeFiles/super_mario.dir/objects/enemy.cpp.o -c /mnt/d/github/super_mario/src/objects/enemy.cpp
 
 CMakeFiles/super_mario.dir/objects/enemy.cpp.i: cmake_force
@@ -282,7 +296,7 @@ CMakeFiles/super_mario.dir/objects/enemy.cpp.s: cmake_force
 CMakeFiles/super_mario.dir/objects/mario.cpp.o: CMakeFiles/super_mario.dir/flags.make
 CMakeFiles/super_mario.dir/objects/mario.cpp.o: /mnt/d/github/super_mario/src/objects/mario.cpp
 CMakeFiles/super_mario.dir/objects/mario.cpp.o: CMakeFiles/super_mario.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/d/github/super_mario/src/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/super_mario.dir/objects/mario.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/d/github/super_mario/src/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/super_mario.dir/objects/mario.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/super_mario.dir/objects/mario.cpp.o -MF CMakeFiles/super_mario.dir/objects/mario.cpp.o.d -o CMakeFiles/super_mario.dir/objects/mario.cpp.o -c /mnt/d/github/super_mario/src/objects/mario.cpp
 
 CMakeFiles/super_mario.dir/objects/mario.cpp.i: cmake_force
@@ -296,7 +310,7 @@ CMakeFiles/super_mario.dir/objects/mario.cpp.s: cmake_force
 CMakeFiles/super_mario.dir/objects/money.cpp.o: CMakeFiles/super_mario.dir/flags.make
 CMakeFiles/super_mario.dir/objects/money.cpp.o: /mnt/d/github/super_mario/src/objects/money.cpp
 CMakeFiles/super_mario.dir/objects/money.cpp.o: CMakeFiles/super_mario.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/d/github/super_mario/src/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/super_mario.dir/objects/money.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/d/github/super_mario/src/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/super_mario.dir/objects/money.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/super_mario.dir/objects/money.cpp.o -MF CMakeFiles/super_mario.dir/objects/money.cpp.o.d -o CMakeFiles/super_mario.dir/objects/money.cpp.o -c /mnt/d/github/super_mario/src/objects/money.cpp
 
 CMakeFiles/super_mario.dir/objects/money.cpp.i: cmake_force
@@ -310,7 +324,7 @@ CMakeFiles/super_mario.dir/objects/money.cpp.s: cmake_force
 CMakeFiles/super_mario.dir/objects/moving_ship.cpp.o: CMakeFiles/super_mario.dir/flags.make
 CMakeFiles/super_mario.dir/objects/moving_ship.cpp.o: /mnt/d/github/super_mario/src/objects/moving_ship.cpp
 CMakeFiles/super_mario.dir/objects/moving_ship.cpp.o: CMakeFiles/super_mario.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/d/github/super_mario/src/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/super_mario.dir/objects/moving_ship.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/d/github/super_mario/src/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/super_mario.dir/objects/moving_ship.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/super_mario.dir/objects/moving_ship.cpp.o -MF CMakeFiles/super_mario.dir/objects/moving_ship.cpp.o.d -o CMakeFiles/super_mario.dir/objects/moving_ship.cpp.o -c /mnt/d/github/super_mario/src/objects/moving_ship.cpp
 
 CMakeFiles/super_mario.dir/objects/moving_ship.cpp.i: cmake_force
@@ -321,10 +335,38 @@ CMakeFiles/super_mario.dir/objects/moving_ship.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/super_mario.dir/objects/moving_ship.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/github/super_mario/src/objects/moving_ship.cpp -o CMakeFiles/super_mario.dir/objects/moving_ship.cpp.s
 
+CMakeFiles/super_mario.dir/objects/flyable_enemy.cpp.o: CMakeFiles/super_mario.dir/flags.make
+CMakeFiles/super_mario.dir/objects/flyable_enemy.cpp.o: /mnt/d/github/super_mario/src/objects/flyable_enemy.cpp
+CMakeFiles/super_mario.dir/objects/flyable_enemy.cpp.o: CMakeFiles/super_mario.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/d/github/super_mario/src/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/super_mario.dir/objects/flyable_enemy.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/super_mario.dir/objects/flyable_enemy.cpp.o -MF CMakeFiles/super_mario.dir/objects/flyable_enemy.cpp.o.d -o CMakeFiles/super_mario.dir/objects/flyable_enemy.cpp.o -c /mnt/d/github/super_mario/src/objects/flyable_enemy.cpp
+
+CMakeFiles/super_mario.dir/objects/flyable_enemy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/super_mario.dir/objects/flyable_enemy.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/github/super_mario/src/objects/flyable_enemy.cpp > CMakeFiles/super_mario.dir/objects/flyable_enemy.cpp.i
+
+CMakeFiles/super_mario.dir/objects/flyable_enemy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/super_mario.dir/objects/flyable_enemy.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/github/super_mario/src/objects/flyable_enemy.cpp -o CMakeFiles/super_mario.dir/objects/flyable_enemy.cpp.s
+
+CMakeFiles/super_mario.dir/objects/jumpable_enemy.cpp.o: CMakeFiles/super_mario.dir/flags.make
+CMakeFiles/super_mario.dir/objects/jumpable_enemy.cpp.o: /mnt/d/github/super_mario/src/objects/jumpable_enemy.cpp
+CMakeFiles/super_mario.dir/objects/jumpable_enemy.cpp.o: CMakeFiles/super_mario.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/d/github/super_mario/src/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/super_mario.dir/objects/jumpable_enemy.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/super_mario.dir/objects/jumpable_enemy.cpp.o -MF CMakeFiles/super_mario.dir/objects/jumpable_enemy.cpp.o.d -o CMakeFiles/super_mario.dir/objects/jumpable_enemy.cpp.o -c /mnt/d/github/super_mario/src/objects/jumpable_enemy.cpp
+
+CMakeFiles/super_mario.dir/objects/jumpable_enemy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/super_mario.dir/objects/jumpable_enemy.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/d/github/super_mario/src/objects/jumpable_enemy.cpp > CMakeFiles/super_mario.dir/objects/jumpable_enemy.cpp.i
+
+CMakeFiles/super_mario.dir/objects/jumpable_enemy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/super_mario.dir/objects/jumpable_enemy.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/d/github/super_mario/src/objects/jumpable_enemy.cpp -o CMakeFiles/super_mario.dir/objects/jumpable_enemy.cpp.s
+
 CMakeFiles/super_mario.dir/ui/console/console_game_map.cpp.o: CMakeFiles/super_mario.dir/flags.make
 CMakeFiles/super_mario.dir/ui/console/console_game_map.cpp.o: /mnt/d/github/super_mario/src/ui/console/console_game_map.cpp
 CMakeFiles/super_mario.dir/ui/console/console_game_map.cpp.o: CMakeFiles/super_mario.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/d/github/super_mario/src/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/super_mario.dir/ui/console/console_game_map.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/d/github/super_mario/src/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/super_mario.dir/ui/console/console_game_map.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/super_mario.dir/ui/console/console_game_map.cpp.o -MF CMakeFiles/super_mario.dir/ui/console/console_game_map.cpp.o.d -o CMakeFiles/super_mario.dir/ui/console/console_game_map.cpp.o -c /mnt/d/github/super_mario/src/ui/console/console_game_map.cpp
 
 CMakeFiles/super_mario.dir/ui/console/console_game_map.cpp.i: cmake_force
@@ -338,7 +380,7 @@ CMakeFiles/super_mario.dir/ui/console/console_game_map.cpp.s: cmake_force
 CMakeFiles/super_mario.dir/ui/console/console_ui_factory.cpp.o: CMakeFiles/super_mario.dir/flags.make
 CMakeFiles/super_mario.dir/ui/console/console_ui_factory.cpp.o: /mnt/d/github/super_mario/src/ui/console/console_ui_factory.cpp
 CMakeFiles/super_mario.dir/ui/console/console_ui_factory.cpp.o: CMakeFiles/super_mario.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/d/github/super_mario/src/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/super_mario.dir/ui/console/console_ui_factory.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/d/github/super_mario/src/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/super_mario.dir/ui/console/console_ui_factory.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/super_mario.dir/ui/console/console_ui_factory.cpp.o -MF CMakeFiles/super_mario.dir/ui/console/console_ui_factory.cpp.o.d -o CMakeFiles/super_mario.dir/ui/console/console_ui_factory.cpp.o -c /mnt/d/github/super_mario/src/ui/console/console_ui_factory.cpp
 
 CMakeFiles/super_mario.dir/ui/console/console_ui_factory.cpp.i: cmake_force
@@ -352,7 +394,7 @@ CMakeFiles/super_mario.dir/ui/console/console_ui_factory.cpp.s: cmake_force
 CMakeFiles/super_mario.dir/ui/console/console_ui_obj_rect_adapter.cpp.o: CMakeFiles/super_mario.dir/flags.make
 CMakeFiles/super_mario.dir/ui/console/console_ui_obj_rect_adapter.cpp.o: /mnt/d/github/super_mario/src/ui/console/console_ui_obj_rect_adapter.cpp
 CMakeFiles/super_mario.dir/ui/console/console_ui_obj_rect_adapter.cpp.o: CMakeFiles/super_mario.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/d/github/super_mario/src/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/super_mario.dir/ui/console/console_ui_obj_rect_adapter.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/d/github/super_mario/src/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/super_mario.dir/ui/console/console_ui_obj_rect_adapter.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/super_mario.dir/ui/console/console_ui_obj_rect_adapter.cpp.o -MF CMakeFiles/super_mario.dir/ui/console/console_ui_obj_rect_adapter.cpp.o.d -o CMakeFiles/super_mario.dir/ui/console/console_ui_obj_rect_adapter.cpp.o -c /mnt/d/github/super_mario/src/ui/console/console_ui_obj_rect_adapter.cpp
 
 CMakeFiles/super_mario.dir/ui/console/console_ui_obj_rect_adapter.cpp.i: cmake_force
@@ -366,7 +408,7 @@ CMakeFiles/super_mario.dir/ui/console/console_ui_obj_rect_adapter.cpp.s: cmake_f
 CMakeFiles/super_mario.dir/ui/console/ui_objects/console_box.cpp.o: CMakeFiles/super_mario.dir/flags.make
 CMakeFiles/super_mario.dir/ui/console/ui_objects/console_box.cpp.o: /mnt/d/github/super_mario/src/ui/console/ui_objects/console_box.cpp
 CMakeFiles/super_mario.dir/ui/console/ui_objects/console_box.cpp.o: CMakeFiles/super_mario.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/d/github/super_mario/src/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/super_mario.dir/ui/console/ui_objects/console_box.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/d/github/super_mario/src/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/super_mario.dir/ui/console/ui_objects/console_box.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/super_mario.dir/ui/console/ui_objects/console_box.cpp.o -MF CMakeFiles/super_mario.dir/ui/console/ui_objects/console_box.cpp.o.d -o CMakeFiles/super_mario.dir/ui/console/ui_objects/console_box.cpp.o -c /mnt/d/github/super_mario/src/ui/console/ui_objects/console_box.cpp
 
 CMakeFiles/super_mario.dir/ui/console/ui_objects/console_box.cpp.i: cmake_force
@@ -380,7 +422,7 @@ CMakeFiles/super_mario.dir/ui/console/ui_objects/console_box.cpp.s: cmake_force
 CMakeFiles/super_mario.dir/ui/console/ui_objects/console_enemy.cpp.o: CMakeFiles/super_mario.dir/flags.make
 CMakeFiles/super_mario.dir/ui/console/ui_objects/console_enemy.cpp.o: /mnt/d/github/super_mario/src/ui/console/ui_objects/console_enemy.cpp
 CMakeFiles/super_mario.dir/ui/console/ui_objects/console_enemy.cpp.o: CMakeFiles/super_mario.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/d/github/super_mario/src/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/super_mario.dir/ui/console/ui_objects/console_enemy.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/d/github/super_mario/src/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/super_mario.dir/ui/console/ui_objects/console_enemy.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/super_mario.dir/ui/console/ui_objects/console_enemy.cpp.o -MF CMakeFiles/super_mario.dir/ui/console/ui_objects/console_enemy.cpp.o.d -o CMakeFiles/super_mario.dir/ui/console/ui_objects/console_enemy.cpp.o -c /mnt/d/github/super_mario/src/ui/console/ui_objects/console_enemy.cpp
 
 CMakeFiles/super_mario.dir/ui/console/ui_objects/console_enemy.cpp.i: cmake_force
@@ -394,7 +436,7 @@ CMakeFiles/super_mario.dir/ui/console/ui_objects/console_enemy.cpp.s: cmake_forc
 CMakeFiles/super_mario.dir/ui/console/ui_objects/console_full_box.cpp.o: CMakeFiles/super_mario.dir/flags.make
 CMakeFiles/super_mario.dir/ui/console/ui_objects/console_full_box.cpp.o: /mnt/d/github/super_mario/src/ui/console/ui_objects/console_full_box.cpp
 CMakeFiles/super_mario.dir/ui/console/ui_objects/console_full_box.cpp.o: CMakeFiles/super_mario.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/d/github/super_mario/src/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/super_mario.dir/ui/console/ui_objects/console_full_box.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/d/github/super_mario/src/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/super_mario.dir/ui/console/ui_objects/console_full_box.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/super_mario.dir/ui/console/ui_objects/console_full_box.cpp.o -MF CMakeFiles/super_mario.dir/ui/console/ui_objects/console_full_box.cpp.o.d -o CMakeFiles/super_mario.dir/ui/console/ui_objects/console_full_box.cpp.o -c /mnt/d/github/super_mario/src/ui/console/ui_objects/console_full_box.cpp
 
 CMakeFiles/super_mario.dir/ui/console/ui_objects/console_full_box.cpp.i: cmake_force
@@ -408,7 +450,7 @@ CMakeFiles/super_mario.dir/ui/console/ui_objects/console_full_box.cpp.s: cmake_f
 CMakeFiles/super_mario.dir/ui/console/ui_objects/console_mario.cpp.o: CMakeFiles/super_mario.dir/flags.make
 CMakeFiles/super_mario.dir/ui/console/ui_objects/console_mario.cpp.o: /mnt/d/github/super_mario/src/ui/console/ui_objects/console_mario.cpp
 CMakeFiles/super_mario.dir/ui/console/ui_objects/console_mario.cpp.o: CMakeFiles/super_mario.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/d/github/super_mario/src/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/super_mario.dir/ui/console/ui_objects/console_mario.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/d/github/super_mario/src/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/super_mario.dir/ui/console/ui_objects/console_mario.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/super_mario.dir/ui/console/ui_objects/console_mario.cpp.o -MF CMakeFiles/super_mario.dir/ui/console/ui_objects/console_mario.cpp.o.d -o CMakeFiles/super_mario.dir/ui/console/ui_objects/console_mario.cpp.o -c /mnt/d/github/super_mario/src/ui/console/ui_objects/console_mario.cpp
 
 CMakeFiles/super_mario.dir/ui/console/ui_objects/console_mario.cpp.i: cmake_force
@@ -422,7 +464,7 @@ CMakeFiles/super_mario.dir/ui/console/ui_objects/console_mario.cpp.s: cmake_forc
 CMakeFiles/super_mario.dir/ui/console/ui_objects/console_money.cpp.o: CMakeFiles/super_mario.dir/flags.make
 CMakeFiles/super_mario.dir/ui/console/ui_objects/console_money.cpp.o: /mnt/d/github/super_mario/src/ui/console/ui_objects/console_money.cpp
 CMakeFiles/super_mario.dir/ui/console/ui_objects/console_money.cpp.o: CMakeFiles/super_mario.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/d/github/super_mario/src/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/super_mario.dir/ui/console/ui_objects/console_money.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/d/github/super_mario/src/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/super_mario.dir/ui/console/ui_objects/console_money.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/super_mario.dir/ui/console/ui_objects/console_money.cpp.o -MF CMakeFiles/super_mario.dir/ui/console/ui_objects/console_money.cpp.o.d -o CMakeFiles/super_mario.dir/ui/console/ui_objects/console_money.cpp.o -c /mnt/d/github/super_mario/src/ui/console/ui_objects/console_money.cpp
 
 CMakeFiles/super_mario.dir/ui/console/ui_objects/console_money.cpp.i: cmake_force
@@ -436,7 +478,7 @@ CMakeFiles/super_mario.dir/ui/console/ui_objects/console_money.cpp.s: cmake_forc
 CMakeFiles/super_mario.dir/ui/console/ui_objects/console_ship.cpp.o: CMakeFiles/super_mario.dir/flags.make
 CMakeFiles/super_mario.dir/ui/console/ui_objects/console_ship.cpp.o: /mnt/d/github/super_mario/src/ui/console/ui_objects/console_ship.cpp
 CMakeFiles/super_mario.dir/ui/console/ui_objects/console_ship.cpp.o: CMakeFiles/super_mario.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/d/github/super_mario/src/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/super_mario.dir/ui/console/ui_objects/console_ship.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/d/github/super_mario/src/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/super_mario.dir/ui/console/ui_objects/console_ship.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/super_mario.dir/ui/console/ui_objects/console_ship.cpp.o -MF CMakeFiles/super_mario.dir/ui/console/ui_objects/console_ship.cpp.o.d -o CMakeFiles/super_mario.dir/ui/console/ui_objects/console_ship.cpp.o -c /mnt/d/github/super_mario/src/ui/console/ui_objects/console_ship.cpp
 
 CMakeFiles/super_mario.dir/ui/console/ui_objects/console_ship.cpp.i: cmake_force
@@ -450,7 +492,7 @@ CMakeFiles/super_mario.dir/ui/console/ui_objects/console_ship.cpp.s: cmake_force
 CMakeFiles/super_mario.dir/ui/console/ui_objects/console_jumpable_enemy.cpp.o: CMakeFiles/super_mario.dir/flags.make
 CMakeFiles/super_mario.dir/ui/console/ui_objects/console_jumpable_enemy.cpp.o: /mnt/d/github/super_mario/src/ui/console/ui_objects/console_jumpable_enemy.cpp
 CMakeFiles/super_mario.dir/ui/console/ui_objects/console_jumpable_enemy.cpp.o: CMakeFiles/super_mario.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/d/github/super_mario/src/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/super_mario.dir/ui/console/ui_objects/console_jumpable_enemy.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/d/github/super_mario/src/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/super_mario.dir/ui/console/ui_objects/console_jumpable_enemy.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/super_mario.dir/ui/console/ui_objects/console_jumpable_enemy.cpp.o -MF CMakeFiles/super_mario.dir/ui/console/ui_objects/console_jumpable_enemy.cpp.o.d -o CMakeFiles/super_mario.dir/ui/console/ui_objects/console_jumpable_enemy.cpp.o -c /mnt/d/github/super_mario/src/ui/console/ui_objects/console_jumpable_enemy.cpp
 
 CMakeFiles/super_mario.dir/ui/console/ui_objects/console_jumpable_enemy.cpp.i: cmake_force
@@ -464,7 +506,7 @@ CMakeFiles/super_mario.dir/ui/console/ui_objects/console_jumpable_enemy.cpp.s: c
 CMakeFiles/super_mario.dir/ui/console/ui_objects/console_flyable_enemy.cpp.o: CMakeFiles/super_mario.dir/flags.make
 CMakeFiles/super_mario.dir/ui/console/ui_objects/console_flyable_enemy.cpp.o: /mnt/d/github/super_mario/src/ui/console/ui_objects/console_flyable_enemy.cpp
 CMakeFiles/super_mario.dir/ui/console/ui_objects/console_flyable_enemy.cpp.o: CMakeFiles/super_mario.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/d/github/super_mario/src/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/super_mario.dir/ui/console/ui_objects/console_flyable_enemy.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/d/github/super_mario/src/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/super_mario.dir/ui/console/ui_objects/console_flyable_enemy.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/super_mario.dir/ui/console/ui_objects/console_flyable_enemy.cpp.o -MF CMakeFiles/super_mario.dir/ui/console/ui_objects/console_flyable_enemy.cpp.o.d -o CMakeFiles/super_mario.dir/ui/console/ui_objects/console_flyable_enemy.cpp.o -c /mnt/d/github/super_mario/src/ui/console/ui_objects/console_flyable_enemy.cpp
 
 CMakeFiles/super_mario.dir/ui/console/ui_objects/console_flyable_enemy.cpp.i: cmake_force
@@ -478,7 +520,7 @@ CMakeFiles/super_mario.dir/ui/console/ui_objects/console_flyable_enemy.cpp.s: cm
 CMakeFiles/super_mario.dir/ui/console/ui_objects/console_moving_ship.cpp.o: CMakeFiles/super_mario.dir/flags.make
 CMakeFiles/super_mario.dir/ui/console/ui_objects/console_moving_ship.cpp.o: /mnt/d/github/super_mario/src/ui/console/ui_objects/console_moving_ship.cpp
 CMakeFiles/super_mario.dir/ui/console/ui_objects/console_moving_ship.cpp.o: CMakeFiles/super_mario.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/d/github/super_mario/src/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/super_mario.dir/ui/console/ui_objects/console_moving_ship.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/d/github/super_mario/src/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/super_mario.dir/ui/console/ui_objects/console_moving_ship.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/super_mario.dir/ui/console/ui_objects/console_moving_ship.cpp.o -MF CMakeFiles/super_mario.dir/ui/console/ui_objects/console_moving_ship.cpp.o.d -o CMakeFiles/super_mario.dir/ui/console/ui_objects/console_moving_ship.cpp.o -c /mnt/d/github/super_mario/src/ui/console/ui_objects/console_moving_ship.cpp
 
 CMakeFiles/super_mario.dir/ui/console/ui_objects/console_moving_ship.cpp.i: cmake_force
@@ -492,7 +534,7 @@ CMakeFiles/super_mario.dir/ui/console/ui_objects/console_moving_ship.cpp.s: cmak
 CMakeFiles/super_mario.dir/util/format_templates.cpp.o: CMakeFiles/super_mario.dir/flags.make
 CMakeFiles/super_mario.dir/util/format_templates.cpp.o: /mnt/d/github/super_mario/src/util/format_templates.cpp
 CMakeFiles/super_mario.dir/util/format_templates.cpp.o: CMakeFiles/super_mario.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/d/github/super_mario/src/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/super_mario.dir/util/format_templates.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/d/github/super_mario/src/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/super_mario.dir/util/format_templates.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/super_mario.dir/util/format_templates.cpp.o -MF CMakeFiles/super_mario.dir/util/format_templates.cpp.o.d -o CMakeFiles/super_mario.dir/util/format_templates.cpp.o -c /mnt/d/github/super_mario/src/util/format_templates.cpp
 
 CMakeFiles/super_mario.dir/util/format_templates.cpp.i: cmake_force
@@ -506,7 +548,7 @@ CMakeFiles/super_mario.dir/util/format_templates.cpp.s: cmake_force
 CMakeFiles/super_mario.dir/util/logger.cpp.o: CMakeFiles/super_mario.dir/flags.make
 CMakeFiles/super_mario.dir/util/logger.cpp.o: /mnt/d/github/super_mario/src/util/logger.cpp
 CMakeFiles/super_mario.dir/util/logger.cpp.o: CMakeFiles/super_mario.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/d/github/super_mario/src/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/super_mario.dir/util/logger.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/d/github/super_mario/src/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/super_mario.dir/util/logger.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/super_mario.dir/util/logger.cpp.o -MF CMakeFiles/super_mario.dir/util/logger.cpp.o.d -o CMakeFiles/super_mario.dir/util/logger.cpp.o -c /mnt/d/github/super_mario/src/util/logger.cpp
 
 CMakeFiles/super_mario.dir/util/logger.cpp.i: cmake_force
@@ -532,11 +574,14 @@ super_mario_OBJECTS = \
 "CMakeFiles/super_mario.dir/model/movable.cpp.o" \
 "CMakeFiles/super_mario.dir/model/rect.cpp.o" \
 "CMakeFiles/super_mario.dir/model/rect_map_movable_adapter.cpp.o" \
+"CMakeFiles/super_mario.dir/model/movable_platform.cpp.o" \
 "CMakeFiles/super_mario.dir/objects/full_box.cpp.o" \
 "CMakeFiles/super_mario.dir/objects/enemy.cpp.o" \
 "CMakeFiles/super_mario.dir/objects/mario.cpp.o" \
 "CMakeFiles/super_mario.dir/objects/money.cpp.o" \
 "CMakeFiles/super_mario.dir/objects/moving_ship.cpp.o" \
+"CMakeFiles/super_mario.dir/objects/flyable_enemy.cpp.o" \
+"CMakeFiles/super_mario.dir/objects/jumpable_enemy.cpp.o" \
 "CMakeFiles/super_mario.dir/ui/console/console_game_map.cpp.o" \
 "CMakeFiles/super_mario.dir/ui/console/console_ui_factory.cpp.o" \
 "CMakeFiles/super_mario.dir/ui/console/console_ui_obj_rect_adapter.cpp.o" \
@@ -568,11 +613,14 @@ super_mario: CMakeFiles/super_mario.dir/model/game_map.cpp.o
 super_mario: CMakeFiles/super_mario.dir/model/movable.cpp.o
 super_mario: CMakeFiles/super_mario.dir/model/rect.cpp.o
 super_mario: CMakeFiles/super_mario.dir/model/rect_map_movable_adapter.cpp.o
+super_mario: CMakeFiles/super_mario.dir/model/movable_platform.cpp.o
 super_mario: CMakeFiles/super_mario.dir/objects/full_box.cpp.o
 super_mario: CMakeFiles/super_mario.dir/objects/enemy.cpp.o
 super_mario: CMakeFiles/super_mario.dir/objects/mario.cpp.o
 super_mario: CMakeFiles/super_mario.dir/objects/money.cpp.o
 super_mario: CMakeFiles/super_mario.dir/objects/moving_ship.cpp.o
+super_mario: CMakeFiles/super_mario.dir/objects/flyable_enemy.cpp.o
+super_mario: CMakeFiles/super_mario.dir/objects/jumpable_enemy.cpp.o
 super_mario: CMakeFiles/super_mario.dir/ui/console/console_game_map.cpp.o
 super_mario: CMakeFiles/super_mario.dir/ui/console/console_ui_factory.cpp.o
 super_mario: CMakeFiles/super_mario.dir/ui/console/console_ui_obj_rect_adapter.cpp.o
@@ -589,7 +637,7 @@ super_mario: CMakeFiles/super_mario.dir/util/format_templates.cpp.o
 super_mario: CMakeFiles/super_mario.dir/util/logger.cpp.o
 super_mario: CMakeFiles/super_mario.dir/build.make
 super_mario: CMakeFiles/super_mario.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/d/github/super_mario/src/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Linking CXX executable super_mario"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/d/github/super_mario/src/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Linking CXX executable super_mario"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/super_mario.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

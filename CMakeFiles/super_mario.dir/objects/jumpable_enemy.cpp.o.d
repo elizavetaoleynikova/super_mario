@@ -1,7 +1,6 @@
-CMakeFiles/super_mario.dir/ui/console/ui_objects/console_jumpable_enemy.cpp.o: \
- /mnt/d/github/super_mario/src/ui/console/ui_objects/console_jumpable_enemy.cpp \
+CMakeFiles/super_mario.dir/objects/jumpable_enemy.cpp.o: \
+ /mnt/d/github/super_mario/src/objects/jumpable_enemy.cpp \
  /usr/include/stdc-predef.h \
- /mnt/d/github/super_mario/src/ui/console/ui_objects/console_jumpable_enemy.hpp \
  /mnt/d/github/super_mario/src/objects/jumpable_enemy.hpp \
  /mnt/d/github/super_mario/src/objects/enemy.hpp \
  /mnt/d/github/super_mario/src/model/collisionable.hpp \
@@ -10,6 +9,4 @@ CMakeFiles/super_mario.dir/ui/console/ui_objects/console_jumpable_enemy.cpp.o: \
  /mnt/d/github/super_mario/src/model/speed.hpp \
  /mnt/d/github/super_mario/src/model/movable.hpp \
  /mnt/d/github/super_mario/src/model/rect_map_movable_adapter.hpp \
- /mnt/d/github/super_mario/src/model/map_movable.hpp \
- /mnt/d/github/super_mario/src/ui/console/console_ui_obj_rect_adapter.hpp \
- /mnt/d/github/super_mario/src/ui/console/console_ui_obj.hpp
+ /mnt/d/github/super_mario/src/model/map_movable.hpp

@@ -64,5 +64,6 @@ CMakeFiles/super_mario.dir/levels/second_level.cpp.o: \
  /mnt/d/github/super_mario/src/objects/mario.hpp \
  /mnt/d/github/super_mario/src/model/movable.hpp \
  /mnt/d/github/super_mario/src/objects/moving_ship.hpp \
+ /mnt/d/github/super_mario/src/model/movable_platform.hpp \
  /mnt/d/github/super_mario/src/model/game_map.hpp \
  /mnt/d/github/super_mario/src/levels/third_level.hpp

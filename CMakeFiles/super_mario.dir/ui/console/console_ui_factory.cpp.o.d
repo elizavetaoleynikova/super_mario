@@ -16,7 +16,9 @@ CMakeFiles/super_mario.dir/ui/console/console_ui_factory.cpp.o: \
  /mnt/d/github/super_mario/src/model/speed.hpp \
  /mnt/d/github/super_mario/src/model/movable.hpp \
  /mnt/d/github/super_mario/src/ui/console/ui_objects/console_jumpable_enemy.hpp \
+ /mnt/d/github/super_mario/src/objects/jumpable_enemy.hpp \
  /mnt/d/github/super_mario/src/ui/console/ui_objects/console_flyable_enemy.hpp \
+ /mnt/d/github/super_mario/src/objects/flyable_enemy.hpp \
  /mnt/d/github/super_mario/src/ui/console/ui_objects/console_full_box.hpp \
  /mnt/d/github/super_mario/src/objects/full_box.hpp \
  /mnt/d/github/super_mario/src/model/ui_factory.hpp \
@@ -73,6 +75,7 @@ CMakeFiles/super_mario.dir/ui/console/console_ui_factory.cpp.o: \
  /usr/include/c++/13/bits/uses_allocator_args.h /usr/include/c++/13/tuple \
  /mnt/d/github/super_mario/src/objects/mario.hpp \
  /mnt/d/github/super_mario/src/objects/moving_ship.hpp \
+ /mnt/d/github/super_mario/src/model/movable_platform.hpp \
  /mnt/d/github/super_mario/src/model/game_map.hpp \
  /mnt/d/github/super_mario/src/ui/console/console_game_map.hpp \
  /mnt/d/github/super_mario/src/ui/console/ui_objects/console_mario.hpp \

@@ -60,6 +60,7 @@ CMakeFiles/super_mario.dir/controller/game.cpp.o: \
  /mnt/d/github/super_mario/src/objects/mario.hpp \
  /mnt/d/github/super_mario/src/model/movable.hpp \
  /mnt/d/github/super_mario/src/objects/moving_ship.hpp \
+ /mnt/d/github/super_mario/src/model/movable_platform.hpp \
  /usr/include/c++/13/algorithm /usr/include/c++/13/bits/stl_algo.h \
  /usr/include/c++/13/bits/algorithmfwd.h \
  /usr/include/c++/13/bits/stl_heap.h \

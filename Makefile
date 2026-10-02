@@ -345,6 +345,30 @@ model/movable.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/super_mario.dir/build.make CMakeFiles/super_mario.dir/model/movable.cpp.s
 .PHONY : model/movable.cpp.s
 
+model/movable_platform.o: model/movable_platform.cpp.o
+.PHONY : model/movable_platform.o
+
+# target to build an object file
+model/movable_platform.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/super_mario.dir/build.make CMakeFiles/super_mario.dir/model/movable_platform.cpp.o
+.PHONY : model/movable_platform.cpp.o
+
+model/movable_platform.i: model/movable_platform.cpp.i
+.PHONY : model/movable_platform.i
+
+# target to preprocess a source file
+model/movable_platform.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/super_mario.dir/build.make CMakeFiles/super_mario.dir/model/movable_platform.cpp.i
+.PHONY : model/movable_platform.cpp.i
+
+model/movable_platform.s: model/movable_platform.cpp.s
+.PHONY : model/movable_platform.s
+
+# target to generate assembly for a file
+model/movable_platform.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/super_mario.dir/build.make CMakeFiles/super_mario.dir/model/movable_platform.cpp.s
+.PHONY : model/movable_platform.cpp.s
+
 model/rect.o: model/rect.cpp.o
 .PHONY : model/rect.o
 
@@ -417,6 +441,30 @@ objects/enemy.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/super_mario.dir/build.make CMakeFiles/super_mario.dir/objects/enemy.cpp.s
 .PHONY : objects/enemy.cpp.s
 
+objects/flyable_enemy.o: objects/flyable_enemy.cpp.o
+.PHONY : objects/flyable_enemy.o
+
+# target to build an object file
+objects/flyable_enemy.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/super_mario.dir/build.make CMakeFiles/super_mario.dir/objects/flyable_enemy.cpp.o
+.PHONY : objects/flyable_enemy.cpp.o
+
+objects/flyable_enemy.i: objects/flyable_enemy.cpp.i
+.PHONY : objects/flyable_enemy.i
+
+# target to preprocess a source file
+objects/flyable_enemy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/super_mario.dir/build.make CMakeFiles/super_mario.dir/objects/flyable_enemy.cpp.i
+.PHONY : objects/flyable_enemy.cpp.i
+
+objects/flyable_enemy.s: objects/flyable_enemy.cpp.s
+.PHONY : objects/flyable_enemy.s
+
+# target to generate assembly for a file
+objects/flyable_enemy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/super_mario.dir/build.make CMakeFiles/super_mario.dir/objects/flyable_enemy.cpp.s
+.PHONY : objects/flyable_enemy.cpp.s
+
 objects/full_box.o: objects/full_box.cpp.o
 .PHONY : objects/full_box.o
 
@@ -440,6 +488,30 @@ objects/full_box.s: objects/full_box.cpp.s
 objects/full_box.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/super_mario.dir/build.make CMakeFiles/super_mario.dir/objects/full_box.cpp.s
 .PHONY : objects/full_box.cpp.s
+
+objects/jumpable_enemy.o: objects/jumpable_enemy.cpp.o
+.PHONY : objects/jumpable_enemy.o
+
+# target to build an object file
+objects/jumpable_enemy.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/super_mario.dir/build.make CMakeFiles/super_mario.dir/objects/jumpable_enemy.cpp.o
+.PHONY : objects/jumpable_enemy.cpp.o
+
+objects/jumpable_enemy.i: objects/jumpable_enemy.cpp.i
+.PHONY : objects/jumpable_enemy.i
+
+# target to preprocess a source file
+objects/jumpable_enemy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/super_mario.dir/build.make CMakeFiles/super_mario.dir/objects/jumpable_enemy.cpp.i
+.PHONY : objects/jumpable_enemy.cpp.i
+
+objects/jumpable_enemy.s: objects/jumpable_enemy.cpp.s
+.PHONY : objects/jumpable_enemy.s
+
+# target to generate assembly for a file
+objects/jumpable_enemy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/super_mario.dir/build.make CMakeFiles/super_mario.dir/objects/jumpable_enemy.cpp.s
+.PHONY : objects/jumpable_enemy.cpp.s
 
 objects/mario.o: objects/mario.cpp.o
 .PHONY : objects/mario.o
@@ -933,6 +1005,9 @@ help:
 	@echo "... model/movable.o"
 	@echo "... model/movable.i"
 	@echo "... model/movable.s"
+	@echo "... model/movable_platform.o"
+	@echo "... model/movable_platform.i"
+	@echo "... model/movable_platform.s"
 	@echo "... model/rect.o"
 	@echo "... model/rect.i"
 	@echo "... model/rect.s"
@@ -942,9 +1017,15 @@ help:
 	@echo "... objects/enemy.o"
 	@echo "... objects/enemy.i"
 	@echo "... objects/enemy.s"
+	@echo "... objects/flyable_enemy.o"
+	@echo "... objects/flyable_enemy.i"
+	@echo "... objects/flyable_enemy.s"
 	@echo "... objects/full_box.o"
 	@echo "... objects/full_box.i"
 	@echo "... objects/full_box.s"
+	@echo "... objects/jumpable_enemy.o"
+	@echo "... objects/jumpable_enemy.i"
+	@echo "... objects/jumpable_enemy.s"
 	@echo "... objects/mario.o"
 	@echo "... objects/mario.i"
 	@echo "... objects/mario.s"

@@ -7,6 +7,7 @@ CMakeFiles/super_mario.dir/controller/game.cpp.o: /mnt/d/github/super_mario/src/
   /mnt/d/github/super_mario/src/model/coord.hpp \
   /mnt/d/github/super_mario/src/model/map_movable.hpp \
   /mnt/d/github/super_mario/src/model/movable.hpp \
+  /mnt/d/github/super_mario/src/model/movable_platform.hpp \
   /mnt/d/github/super_mario/src/model/rect.hpp \
   /mnt/d/github/super_mario/src/model/speed.hpp \
   /mnt/d/github/super_mario/src/objects/mario.hpp \
@@ -129,6 +130,7 @@ CMakeFiles/super_mario.dir/levels/first_level.cpp.o: /mnt/d/github/super_mario/s
   /mnt/d/github/super_mario/src/model/game_map.hpp \
   /mnt/d/github/super_mario/src/model/map_movable.hpp \
   /mnt/d/github/super_mario/src/model/movable.hpp \
+  /mnt/d/github/super_mario/src/model/movable_platform.hpp \
   /mnt/d/github/super_mario/src/model/rect.hpp \
   /mnt/d/github/super_mario/src/model/speed.hpp \
   /mnt/d/github/super_mario/src/model/ui_factory.hpp \
@@ -204,6 +206,7 @@ CMakeFiles/super_mario.dir/levels/game_level.cpp.o: /mnt/d/github/super_mario/sr
   /mnt/d/github/super_mario/src/model/game_map.hpp \
   /mnt/d/github/super_mario/src/model/map_movable.hpp \
   /mnt/d/github/super_mario/src/model/movable.hpp \
+  /mnt/d/github/super_mario/src/model/movable_platform.hpp \
   /mnt/d/github/super_mario/src/model/rect.hpp \
   /mnt/d/github/super_mario/src/model/speed.hpp \
   /mnt/d/github/super_mario/src/model/ui_factory.hpp \
@@ -281,6 +284,7 @@ CMakeFiles/super_mario.dir/levels/second_level.cpp.o: /mnt/d/github/super_mario/
   /mnt/d/github/super_mario/src/model/game_map.hpp \
   /mnt/d/github/super_mario/src/model/map_movable.hpp \
   /mnt/d/github/super_mario/src/model/movable.hpp \
+  /mnt/d/github/super_mario/src/model/movable_platform.hpp \
   /mnt/d/github/super_mario/src/model/rect.hpp \
   /mnt/d/github/super_mario/src/model/speed.hpp \
   /mnt/d/github/super_mario/src/model/ui_factory.hpp \
@@ -357,6 +361,7 @@ CMakeFiles/super_mario.dir/levels/third_level.cpp.o: /mnt/d/github/super_mario/s
   /mnt/d/github/super_mario/src/model/game_map.hpp \
   /mnt/d/github/super_mario/src/model/map_movable.hpp \
   /mnt/d/github/super_mario/src/model/movable.hpp \
+  /mnt/d/github/super_mario/src/model/movable_platform.hpp \
   /mnt/d/github/super_mario/src/model/rect.hpp \
   /mnt/d/github/super_mario/src/model/speed.hpp \
   /mnt/d/github/super_mario/src/model/ui_factory.hpp \
@@ -433,13 +438,16 @@ CMakeFiles/super_mario.dir/main.cpp.o: /mnt/d/github/super_mario/src/main.cpp \
   /mnt/d/github/super_mario/src/model/game_map.hpp \
   /mnt/d/github/super_mario/src/model/map_movable.hpp \
   /mnt/d/github/super_mario/src/model/movable.hpp \
+  /mnt/d/github/super_mario/src/model/movable_platform.hpp \
   /mnt/d/github/super_mario/src/model/rect.hpp \
   /mnt/d/github/super_mario/src/model/rect_map_movable_adapter.hpp \
   /mnt/d/github/super_mario/src/model/speed.hpp \
   /mnt/d/github/super_mario/src/model/ui_factory.hpp \
   /mnt/d/github/super_mario/src/objects/box.hpp \
   /mnt/d/github/super_mario/src/objects/enemy.hpp \
+  /mnt/d/github/super_mario/src/objects/flyable_enemy.hpp \
   /mnt/d/github/super_mario/src/objects/full_box.hpp \
+  /mnt/d/github/super_mario/src/objects/jumpable_enemy.hpp \
   /mnt/d/github/super_mario/src/objects/mario.hpp \
   /mnt/d/github/super_mario/src/objects/money.hpp \
   /mnt/d/github/super_mario/src/objects/moving_ship.hpp \
@@ -622,6 +630,13 @@ CMakeFiles/super_mario.dir/model/movable.cpp.o: /mnt/d/github/super_mario/src/mo
   /mnt/d/github/super_mario/src/model/rect.hpp \
   /usr/include/stdc-predef.h
 
+CMakeFiles/super_mario.dir/model/movable_platform.cpp.o: /mnt/d/github/super_mario/src/model/movable_platform.cpp \
+  /mnt/d/github/super_mario/src/model/coord.hpp \
+  /mnt/d/github/super_mario/src/model/movable.hpp \
+  /mnt/d/github/super_mario/src/model/movable_platform.hpp \
+  /mnt/d/github/super_mario/src/model/rect.hpp \
+  /usr/include/stdc-predef.h
+
 CMakeFiles/super_mario.dir/model/rect.cpp.o: /mnt/d/github/super_mario/src/model/rect.cpp \
   /mnt/d/github/super_mario/src/model/coord.hpp \
   /mnt/d/github/super_mario/src/model/rect.hpp \
@@ -740,6 +755,18 @@ CMakeFiles/super_mario.dir/objects/enemy.cpp.o: /mnt/d/github/super_mario/src/ob
   /mnt/d/github/super_mario/src/objects/enemy.hpp \
   /usr/include/stdc-predef.h
 
+CMakeFiles/super_mario.dir/objects/flyable_enemy.cpp.o: /mnt/d/github/super_mario/src/objects/flyable_enemy.cpp \
+  /mnt/d/github/super_mario/src/model/collisionable.hpp \
+  /mnt/d/github/super_mario/src/model/coord.hpp \
+  /mnt/d/github/super_mario/src/model/map_movable.hpp \
+  /mnt/d/github/super_mario/src/model/movable.hpp \
+  /mnt/d/github/super_mario/src/model/rect.hpp \
+  /mnt/d/github/super_mario/src/model/rect_map_movable_adapter.hpp \
+  /mnt/d/github/super_mario/src/model/speed.hpp \
+  /mnt/d/github/super_mario/src/objects/enemy.hpp \
+  /mnt/d/github/super_mario/src/objects/flyable_enemy.hpp \
+  /usr/include/stdc-predef.h
+
 CMakeFiles/super_mario.dir/objects/full_box.cpp.o: /mnt/d/github/super_mario/src/objects/full_box.cpp \
   /mnt/d/github/super_mario/src/controller/game.hpp \
   /mnt/d/github/super_mario/src/model/collisionable.hpp \
@@ -747,6 +774,7 @@ CMakeFiles/super_mario.dir/objects/full_box.cpp.o: /mnt/d/github/super_mario/src
   /mnt/d/github/super_mario/src/model/game_map.hpp \
   /mnt/d/github/super_mario/src/model/map_movable.hpp \
   /mnt/d/github/super_mario/src/model/movable.hpp \
+  /mnt/d/github/super_mario/src/model/movable_platform.hpp \
   /mnt/d/github/super_mario/src/model/rect.hpp \
   /mnt/d/github/super_mario/src/model/rect_map_movable_adapter.hpp \
   /mnt/d/github/super_mario/src/model/speed.hpp \
@@ -817,6 +845,18 @@ CMakeFiles/super_mario.dir/objects/full_box.cpp.o: /mnt/d/github/super_mario/src
   /usr/include/x86_64-linux-gnu/sys/cdefs.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h
 
+CMakeFiles/super_mario.dir/objects/jumpable_enemy.cpp.o: /mnt/d/github/super_mario/src/objects/jumpable_enemy.cpp \
+  /mnt/d/github/super_mario/src/model/collisionable.hpp \
+  /mnt/d/github/super_mario/src/model/coord.hpp \
+  /mnt/d/github/super_mario/src/model/map_movable.hpp \
+  /mnt/d/github/super_mario/src/model/movable.hpp \
+  /mnt/d/github/super_mario/src/model/rect.hpp \
+  /mnt/d/github/super_mario/src/model/rect_map_movable_adapter.hpp \
+  /mnt/d/github/super_mario/src/model/speed.hpp \
+  /mnt/d/github/super_mario/src/objects/enemy.hpp \
+  /mnt/d/github/super_mario/src/objects/jumpable_enemy.hpp \
+  /usr/include/stdc-predef.h
+
 CMakeFiles/super_mario.dir/objects/mario.cpp.o: /mnt/d/github/super_mario/src/objects/mario.cpp \
   /mnt/d/github/super_mario/src/model/collisionable.hpp \
   /mnt/d/github/super_mario/src/model/coord.hpp \
@@ -842,6 +882,7 @@ CMakeFiles/super_mario.dir/objects/moving_ship.cpp.o: /mnt/d/github/super_mario/
   /mnt/d/github/super_mario/src/model/coord.hpp \
   /mnt/d/github/super_mario/src/model/map_movable.hpp \
   /mnt/d/github/super_mario/src/model/movable.hpp \
+  /mnt/d/github/super_mario/src/model/movable_platform.hpp \
   /mnt/d/github/super_mario/src/model/rect.hpp \
   /mnt/d/github/super_mario/src/objects/moving_ship.hpp \
   /usr/include/stdc-predef.h
@@ -1153,13 +1194,16 @@ CMakeFiles/super_mario.dir/ui/console/console_ui_factory.cpp.o: /mnt/d/github/su
   /mnt/d/github/super_mario/src/model/game_map.hpp \
   /mnt/d/github/super_mario/src/model/map_movable.hpp \
   /mnt/d/github/super_mario/src/model/movable.hpp \
+  /mnt/d/github/super_mario/src/model/movable_platform.hpp \
   /mnt/d/github/super_mario/src/model/rect.hpp \
   /mnt/d/github/super_mario/src/model/rect_map_movable_adapter.hpp \
   /mnt/d/github/super_mario/src/model/speed.hpp \
   /mnt/d/github/super_mario/src/model/ui_factory.hpp \
   /mnt/d/github/super_mario/src/objects/box.hpp \
   /mnt/d/github/super_mario/src/objects/enemy.hpp \
+  /mnt/d/github/super_mario/src/objects/flyable_enemy.hpp \
   /mnt/d/github/super_mario/src/objects/full_box.hpp \
+  /mnt/d/github/super_mario/src/objects/jumpable_enemy.hpp \
   /mnt/d/github/super_mario/src/objects/mario.hpp \
   /mnt/d/github/super_mario/src/objects/money.hpp \
   /mnt/d/github/super_mario/src/objects/moving_ship.hpp \
@@ -1280,9 +1324,9 @@ CMakeFiles/super_mario.dir/ui/console/ui_objects/console_flyable_enemy.cpp.o: /m
   /mnt/d/github/super_mario/src/model/rect_map_movable_adapter.hpp \
   /mnt/d/github/super_mario/src/model/speed.hpp \
   /mnt/d/github/super_mario/src/objects/enemy.hpp \
+  /mnt/d/github/super_mario/src/objects/flyable_enemy.hpp \
   /mnt/d/github/super_mario/src/ui/console/console_ui_obj.hpp \
   /mnt/d/github/super_mario/src/ui/console/console_ui_obj_rect_adapter.hpp \
-  /mnt/d/github/super_mario/src/ui/console/ui_objects/console_enemy.hpp \
   /mnt/d/github/super_mario/src/ui/console/ui_objects/console_flyable_enemy.hpp \
   /usr/include/stdc-predef.h
 
@@ -1293,6 +1337,7 @@ CMakeFiles/super_mario.dir/ui/console/ui_objects/console_full_box.cpp.o: /mnt/d/
   /mnt/d/github/super_mario/src/model/game_map.hpp \
   /mnt/d/github/super_mario/src/model/map_movable.hpp \
   /mnt/d/github/super_mario/src/model/movable.hpp \
+  /mnt/d/github/super_mario/src/model/movable_platform.hpp \
   /mnt/d/github/super_mario/src/model/rect.hpp \
   /mnt/d/github/super_mario/src/model/rect_map_movable_adapter.hpp \
   /mnt/d/github/super_mario/src/model/speed.hpp \
@@ -1375,9 +1420,9 @@ CMakeFiles/super_mario.dir/ui/console/ui_objects/console_jumpable_enemy.cpp.o: /
   /mnt/d/github/super_mario/src/model/rect_map_movable_adapter.hpp \
   /mnt/d/github/super_mario/src/model/speed.hpp \
   /mnt/d/github/super_mario/src/objects/enemy.hpp \
+  /mnt/d/github/super_mario/src/objects/jumpable_enemy.hpp \
   /mnt/d/github/super_mario/src/ui/console/console_ui_obj.hpp \
   /mnt/d/github/super_mario/src/ui/console/console_ui_obj_rect_adapter.hpp \
-  /mnt/d/github/super_mario/src/ui/console/ui_objects/console_enemy.hpp \
   /mnt/d/github/super_mario/src/ui/console/ui_objects/console_jumpable_enemy.hpp \
   /usr/include/stdc-predef.h
 
@@ -1411,6 +1456,7 @@ CMakeFiles/super_mario.dir/ui/console/ui_objects/console_moving_ship.cpp.o: /mnt
   /mnt/d/github/super_mario/src/model/coord.hpp \
   /mnt/d/github/super_mario/src/model/map_movable.hpp \
   /mnt/d/github/super_mario/src/model/movable.hpp \
+  /mnt/d/github/super_mario/src/model/movable_platform.hpp \
   /mnt/d/github/super_mario/src/model/rect.hpp \
   /mnt/d/github/super_mario/src/objects/moving_ship.hpp \
   /mnt/d/github/super_mario/src/ui/console/console_ui_obj.hpp \
@@ -1840,15 +1886,11 @@ CMakeFiles/super_mario.dir/util/logger.cpp.o: /mnt/d/github/super_mario/src/util
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h
 
 
-/usr/include/x86_64-linux-gnu/c++/13/bits/messages_members.h:
-
 /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h:
 
 /usr/include/libintl.h:
 
 /usr/include/c++/13/mutex:
-
-/usr/include/c++/13/locale:
 
 /usr/include/c++/13/iomanip:
 
@@ -1930,7 +1972,15 @@ CMakeFiles/super_mario.dir/util/logger.cpp.o: /mnt/d/github/super_mario/src/util
 
 /usr/include/c++/13/bits/locale_facets.tcc:
 
-/usr/include/c++/13/bits/locale_facets.h:
+/usr/include/c++/13/bits/locale_conv.h:
+
+/usr/include/c++/13/bits/istream.tcc:
+
+/usr/include/c++/13/bits/ios_base.h:
+
+/usr/include/c++/13/bits/cxxabi_init_exception.h:
+
+/usr/include/c++/13/bits/cxxabi_forced.h:
 
 /mnt/d/github/super_mario/src/levels/game_level.cpp:
 
@@ -2012,8 +2062,6 @@ CMakeFiles/super_mario.dir/util/logger.cpp.o: /mnt/d/github/super_mario/src/util
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h:
 
-/usr/include/c++/13/bits/ios_base.h:
-
 /usr/include/c++/13/string:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
@@ -2070,6 +2118,8 @@ CMakeFiles/super_mario.dir/util/logger.cpp.o: /mnt/d/github/super_mario/src/util
 
 /usr/include/c++/13/bits/memoryfwd.h:
 
+/mnt/d/github/super_mario/src/model/movable_platform.cpp:
+
 /usr/include/c++/13/bits/functexcept.h:
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
@@ -2095,6 +2145,10 @@ CMakeFiles/super_mario.dir/util/logger.cpp.o: /mnt/d/github/super_mario/src/util
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
 
 /usr/include/math.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/messages_members.h:
+
+/mnt/d/github/super_mario/src/objects/flyable_enemy.cpp:
 
 /usr/include/c++/13/tr1/special_function_util.h:
 
@@ -2160,18 +2214,6 @@ CMakeFiles/super_mario.dir/util/logger.cpp.o: /mnt/d/github/super_mario/src/util
 
 /mnt/d/github/super_mario/src/main.cpp:
 
-/usr/include/c++/13/streambuf:
-
-/usr/include/c++/13/bits/memory_resource.h:
-
-/usr/include/c++/13/bits/this_thread_sleep.h:
-
-/usr/include/wchar.h:
-
-/mnt/d/github/super_mario/src/model/rect_map_movable_adapter.cpp:
-
-/usr/include/c++/13/debug/assertions.h:
-
 /usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h:
 
 /mnt/d/github/super_mario/src/os_controls/linux/linux_keyboard.hpp:
@@ -2180,13 +2222,27 @@ CMakeFiles/super_mario.dir/util/logger.cpp.o: /mnt/d/github/super_mario/src/util
 
 /usr/include/errno.h:
 
+/usr/include/c++/13/streambuf:
+
+/usr/include/c++/13/bits/memory_resource.h:
+
+/usr/include/c++/13/bits/this_thread_sleep.h:
+
+/mnt/d/github/super_mario/src/model/movable_platform.hpp:
+
+/usr/include/wchar.h:
+
+/mnt/d/github/super_mario/src/model/rect_map_movable_adapter.cpp:
+
+/usr/include/c++/13/debug/assertions.h:
+
 /usr/include/c++/13/bits/stl_algobase.h:
+
+/mnt/d/github/super_mario/src/model/ui_factory.hpp:
 
 /usr/include/c++/13/bits/fstream.tcc:
 
 /mnt/d/github/super_mario/src/levels/third_level.cpp:
-
-/mnt/d/github/super_mario/src/model/ui_factory.hpp:
 
 /usr/include/c++/13/bits/requires_hosted.h:
 
@@ -2262,10 +2318,6 @@ CMakeFiles/super_mario.dir/util/logger.cpp.o: /mnt/d/github/super_mario/src/util
 
 /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
 
-/usr/include/c++/13/bits/locale_classes.tcc:
-
-/usr/include/c++/13/bits/uniform_int_dist.h:
-
 /usr/include/c++/13/bits/stringfwd.h:
 
 /mnt/d/github/super_mario/src/objects/moving_ship.hpp:
@@ -2290,11 +2342,25 @@ CMakeFiles/super_mario.dir/util/logger.cpp.o: /mnt/d/github/super_mario/src/util
 
 /mnt/d/github/super_mario/src/model/rect_map_movable_adapter.hpp:
 
+/usr/include/c++/13/bits/exception_ptr.h:
+
+/mnt/d/github/super_mario/src/objects/box.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
 /usr/include/c++/13/bits/exception_defines.h:
 
 /mnt/d/github/super_mario/src/objects/enemy.hpp:
+
+/usr/include/c++/13/bits/locale_classes.tcc:
+
+/usr/include/c++/13/bits/uniform_int_dist.h:
+
+/mnt/d/github/super_mario/src/objects/flyable_enemy.hpp:
+
+/usr/include/c++/13/bits/locale_facets.h:
+
+/mnt/d/github/super_mario/src/objects/jumpable_enemy.hpp:
 
 /mnt/d/github/super_mario/src/objects/ship.hpp:
 
@@ -2480,6 +2546,10 @@ CMakeFiles/super_mario.dir/util/logger.cpp.o: /mnt/d/github/super_mario/src/util
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
+/usr/include/c++/13/locale:
+
+/mnt/d/github/super_mario/src/objects/jumpable_enemy.cpp:
+
 /mnt/d/github/super_mario/src/objects/money.cpp:
 
 /mnt/d/github/super_mario/src/objects/moving_ship.cpp:
@@ -2491,15 +2561,3 @@ CMakeFiles/super_mario.dir/util/logger.cpp.o: /mnt/d/github/super_mario/src/util
 /usr/include/c++/13/ctime:
 
 /mnt/d/github/super_mario/src/ui/console/console_game_map.cpp:
-
-/usr/include/c++/13/bits/cxxabi_forced.h:
-
-/usr/include/c++/13/bits/cxxabi_init_exception.h:
-
-/mnt/d/github/super_mario/src/objects/box.hpp:
-
-/usr/include/c++/13/bits/exception_ptr.h:
-
-/usr/include/c++/13/bits/locale_conv.h:
-
-/usr/include/c++/13/bits/istream.tcc:
