@@ -1,0 +1,7 @@
+CMakeFiles/super_mario.dir/model/collisionable.cpp.o: \
+ /mnt/d/github/super_mario/src/model/collisionable.cpp \
+ /usr/include/stdc-predef.h \
+ /mnt/d/github/super_mario/src/model/collisionable.hpp \
+ /mnt/d/github/super_mario/src/model/rect.hpp \
+ /mnt/d/github/super_mario/src/model/coord.hpp \
+ /mnt/d/github/super_mario/src/model/speed.hpp
