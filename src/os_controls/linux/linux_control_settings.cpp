@@ -4,7 +4,7 @@
 
 using biv::LinuxControlSettings;
 
-LinuxControlSettings::LinuxControlSettings(const int height, const int width)
+LinuxControlSettings::LinuxControlSettings(const int height, const int width) // инициализация объекта класса
 : height(height), width(width) {}
 
 void LinuxControlSettings::init() {

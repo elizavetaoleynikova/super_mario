@@ -18,7 +18,7 @@
 	- Какими элементами языка С++ реализуется этот принцип?
 	- Приведите примеры кода, отображающие этот прицип.
 */
-#include <thread>
+#include <thread> // задержка времени программы
 
 #include "console_ui_factory.hpp"
 #include "first_level.hpp"
@@ -41,7 +41,7 @@
 
 int main() {
 	// 1. Установка параметров игры
-	using namespace std::chrono_literals;
+	using namespace std::chrono_literals; // для записи временных интервалов frame_delay = 10ms;
 	
 	const int map_height = 30;
 	const int map_weight = 200;
@@ -50,7 +50,7 @@ int main() {
 	biv::OSControlSettings* control_settings = nullptr;
 	biv::KeyBoard* keyboard = nullptr;
 	#ifdef WINDOWS_CONSOLE
-		control_settings = new biv::WindowsControlSettings();
+		control_settings = new biv::WindowsControlSettings(); // настройки управления для windows
 		keyboard = new biv::WindowsKeyBoard();
 		frame_delay = std::chrono::milliseconds(10);
 	#elif defined(LINUX_CONSOLE)
@@ -64,7 +64,7 @@ int main() {
 	
 	biv::Game game;
 	biv::UIFactory* ui_factory = new biv::ConsoleUIFactory(&game);
-	biv::GameMap* game_map = ui_factory->get_game_map(map_height, map_weight);
+	biv::GameMap* game_map = ui_factory->get_game_map(map_height, map_weight); // создать объект класса GameMap и присвоить значение метода указателя ui_factory
 	biv::GameLevel* game_level = new biv::FirstLevel(ui_factory);
 	biv::Mario* mario = ui_factory->get_mario();
 	
@@ -98,6 +98,7 @@ int main() {
 		// 3. Обновление внутреннего состояния игры
 		game.move_objs_horizontally();
 		game.check_horizontally_static_collisions();
+		game.move_collision_platform();
 		
 		game.move_objs_vertically();
 		game.check_mario_collision();

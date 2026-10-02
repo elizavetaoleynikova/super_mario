@@ -1,4 +1,5 @@
 #include "console_ui_factory.hpp"
+#include "console_moving_ship.hpp"
 
 using biv::ConsoleUIFactory;
 
@@ -7,19 +8,28 @@ ConsoleUIFactory::ConsoleUIFactory(Game* game) : UIFactory(game) {}
 void ConsoleUIFactory::clear_data() {
 	game->remove_objs();
 	game_map->remove_objs();
+	
+
 	delete mario;
 	mario = nullptr;
+
 	boxes.clear();
 	full_boxes.clear();
 	ships.clear();
 	enemies.clear();
+	flyable_enemies.clear();
+	jumpable_enemies.clear();
 	moneys.clear();
+	moving_ships.clear();
 }
 
 void ConsoleUIFactory::create_box(
-	const Coord& top_left, const int width, const int height
+	const Coord& top_left,
+	const int width,
+	const int height
 ) {
 	ConsoleBox* box = new ConsoleBox(top_left, width, height);
+
 	boxes.push_back(box);
 	game->add_map_movable(box);
 	game->add_static_obj(box);
@@ -27,9 +37,12 @@ void ConsoleUIFactory::create_box(
 }
 
 void ConsoleUIFactory::create_enemy(
-	const Coord& top_left, const int width, const int height
+	const Coord& top_left,
+	const int width,
+	const int height
 ) {
 	ConsoleEnemy* enemy = new ConsoleEnemy(top_left, width, height);
+
 	enemies.push_back(enemy);
 	game->add_map_movable(enemy);
 	game->add_movable(enemy);
@@ -37,10 +50,53 @@ void ConsoleUIFactory::create_enemy(
 	game_map->add_obj(enemy);
 }
 
-void ConsoleUIFactory::create_full_box(
-	const Coord& top_left, const int width, const int height
+void ConsoleUIFactory::create_jumpable_enemy(
+	const Coord& top_left,
+	const int width,
+	const int height
 ) {
-	ConsoleFullBox* full_box = new ConsoleFullBox(top_left, width, height, this);
+	ConsoleJumpableEnemy* enemy =
+		new ConsoleJumpableEnemy(top_left, width, height);
+
+	jumpable_enemies.push_back(enemy);
+
+	game->add_map_movable(enemy);
+	game->add_movable(enemy);
+	game->add_collisionable(enemy);
+
+	game_map->add_obj(enemy);
+}
+
+void ConsoleUIFactory::create_flyable_enemy(
+	const Coord& top_left,
+	const int width,
+	const int height
+) {
+	ConsoleFlyableEnemy* enemy =
+		new ConsoleFlyableEnemy(
+			top_left,
+			width,
+			height,
+			game_map->get_width(),
+			game_map->get_height()
+		);
+
+	flyable_enemies.push_back(enemy);
+
+	game->add_map_movable(enemy);
+	game->add_movable(enemy);
+	game->add_collisionable(enemy);
+	game_map->add_obj(enemy);
+}
+
+void ConsoleUIFactory::create_full_box(
+	const Coord& top_left,
+	const int width,
+	const int height
+) {
+	ConsoleFullBox* full_box =
+		new ConsoleFullBox(top_left, width, height, this);
+
 	full_boxes.push_back(full_box);
 	game->add_collisionable(full_box);
 	game->add_map_movable(full_box);
@@ -49,16 +105,20 @@ void ConsoleUIFactory::create_full_box(
 }
 
 void ConsoleUIFactory::create_mario(
-	const Coord& top_left, const int width, const int height
+	const Coord& top_left,
+	const int width,
+	const int height
 ) {
 	game->remove_collisionable(mario);
 	game->remove_movable(mario);
 	game->remove_mario();
 	game_map->remove_obj(mario);
+
 	delete mario;
 	mario = nullptr;
-	
+
 	mario = new ConsoleMario(top_left, width, height);
+
 	game->add_collisionable(mario);
 	game->add_movable(mario);
 	game->add_mario(mario);
@@ -66,9 +126,13 @@ void ConsoleUIFactory::create_mario(
 }
 
 void ConsoleUIFactory::create_money(
-	const Coord& top_left, const int width, const int height
+	const Coord& top_left,
+	const int width,
+	const int height
 ) {
-	ConsoleMoney* money = new ConsoleMoney(top_left, width, height);
+	ConsoleMoney* money =
+		new ConsoleMoney(top_left, width, height);
+
 	moneys.push_back(money);
 	game->add_map_movable(money);
 	game->add_movable(money);
@@ -76,23 +140,62 @@ void ConsoleUIFactory::create_money(
 	game_map->add_obj(money);
 }
 
-void ConsoleUIFactory::create_ship(
-	const Coord& top_left, const int width, const int height
+
+biv::GameMap* ConsoleUIFactory::get_game_map(
+	const int height,
+	const int width
+) {
+	if (game_map == nullptr) {
+		game_map = new ConsoleGameMap(height, width);
+	}
+
+	return game_map;
+}
+
+biv::Mario* ConsoleUIFactory::get_mario() {
+	return mario;
+}
+
+void ConsoleUIFactory::create_moving_ship(
+	const Coord& top_left,
+	const int width,
+	const int height,
+	const float hspeed,
+	const float left_border,
+	const float right_border
+) {
+	ConsoleMovingShip* ship = new ConsoleMovingShip(
+		top_left,
+		width,
+		height,
+		hspeed,
+		left_border,
+		right_border
+	);
+
+	moving_ships.push_back(ship);
+
+	game->add_movable(ship);
+	game->add_static_obj(ship);
+	game->add_map_movable(ship);
+	game->add_movable_platform(ship);
+
+	game_map->add_obj(ship);
+}
+
+void ConsoleUIFactory::set_level_end_platform(biv::Rect* obj) {
+	game->set_level_end_platform(obj);
+}
+
+biv::Rect* ConsoleUIFactory::create_ship(
+	const Coord& top_left,
+	const int width,
+	const int height
 ) {
 	ConsoleShip* ship = new ConsoleShip(top_left, width, height);
 	ships.push_back(ship);
 	game->add_map_movable(ship);
 	game->add_static_obj(ship);
 	game_map->add_obj(ship);
-}
-
-biv::GameMap* ConsoleUIFactory::get_game_map(const int height, const int width) {
-	if (game_map == nullptr) {
-		game_map = new ConsoleGameMap(height, width);
-	}
-	return game_map;
-}
-
-biv::Mario* ConsoleUIFactory::get_mario() {
-	return mario;
+	return ship;
 }

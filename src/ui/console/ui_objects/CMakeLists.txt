@@ -6,6 +6,9 @@ target_sources(${PROJECT_NAME}
 		console_mario.cpp
 		console_money.cpp
 		console_ship.cpp
+		console_jumpable_enemy.cpp
+		console_flyable_enemy.cpp
+		console_moving_ship.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PRIVATE

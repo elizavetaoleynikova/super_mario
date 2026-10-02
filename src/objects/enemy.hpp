@@ -1,8 +1,3 @@
-/**
-	- Если создавать класс FlyableEenemy, JumpableEnemy и другие виды врагов, 
-		то почему их нельзя наследовать от Enemy?
-*/
-
 #pragma once
 
 #include "collisionable.hpp"
@@ -13,14 +8,16 @@
 
 namespace biv {
 	class Enemy : public RectMapMovableAdapter, public Movable, public Collisionable {
-		public:
-			Enemy(const Coord& top_left, const int width, const int height);
+	public:
+		Enemy(const Coord& top_left, const int width, const int height);
 
-			Rect get_rect() const noexcept override;
-			Speed get_speed() const noexcept override;
+		Rect get_rect() const noexcept override;
+		Speed get_speed() const noexcept override;
 
-			void process_horizontal_static_collision(Rect*) noexcept override;
-			void process_mario_collision(Collisionable*) noexcept override;
-			void process_vertical_static_collision(Rect*) noexcept override;
+		void process_horizontal_static_collision(Rect*) noexcept override;
+		void process_mario_collision(Collisionable*) noexcept override;
+		void process_vertical_static_collision(Rect*) noexcept override;
+
+		void process_platform_edge() noexcept;
 	};
 }

@@ -8,3 +8,12 @@
 *.o
 
 build_*/
+
+build/
+build-linux/
+.idea/
+.vscode/
+*.exe
+*.o
+*.obj
+*.log

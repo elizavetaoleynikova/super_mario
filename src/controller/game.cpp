@@ -1,4 +1,6 @@
 #include "game.hpp"
+#include "moving_ship.hpp"
+
 
 #include <algorithm>
 
@@ -26,9 +28,13 @@ void Game::add_static_obj(Rect* obj) {
 	static_objs.push_back(obj);
 }
 
+void Game::add_movable_platform(MovablePlatform* platform) {
+	movable_platforms.push_back(platform);
+}
+
 void Game::check_horizontally_static_collisions() noexcept {
-	for (Collisionable* obj: collisionable_objs) {
-		for (Rect* static_obj: static_objs) {
+	for (Collisionable* obj : collisionable_objs) {
+		for (Rect* static_obj : static_objs) {
 			if (obj->has_collision(static_obj)) {
 				obj->process_horizontal_static_collision(static_obj);
 				break;
@@ -40,12 +46,14 @@ void Game::check_horizontally_static_collisions() noexcept {
 void Game::check_mario_collision() {
 	for (int i = 0; i < collisionable_objs.size(); i++) {
 		Collisionable* obj = collisionable_objs[i];
+
 		if (obj->has_collision(mario)) {
 			obj->process_mario_collision(mario);
+
 			if (!mario->is_active()) {
 				break;
-			} else if (!obj->is_active()) {
-				// TODO
+			}
+			else if (!obj->is_active()) {
 				collisionable_objs[i] = collisionable_objs.back();
 				collisionable_objs.pop_back();
 				i--;
@@ -55,21 +63,23 @@ void Game::check_mario_collision() {
 }
 
 bool Game::check_static_collisions(Collisionable* obj) const noexcept {
-	for (Rect* static_obj: static_objs) {
+	for (Rect* static_obj : static_objs) {
 		if (obj->has_collision(static_obj)) {
 			return true;
 		}
 	}
+
 	return false;
 }
 
 void Game::check_vertically_static_collisions() noexcept {
-	if (mario->has_collision(static_objs[static_objs.size() - 1])) {
+	if (level_end_platform != nullptr &&
+		mario->has_collision(level_end_platform)) {
 		is_level_end_ = true;
 	}
-	
-	for (Collisionable* obj: collisionable_objs) {
-		for (Rect* static_obj: static_objs) {
+
+	for (Collisionable* obj : collisionable_objs) {
+		for (Rect* static_obj : static_objs) {
 			if (obj->has_collision(static_obj)) {
 				obj->process_vertical_static_collision(static_obj);
 				break;
@@ -91,25 +101,45 @@ bool Game::is_level_end() const noexcept {
 }
 
 void Game::move_map_left() noexcept {
-	for (MapMovable* obj: map_movable_objs) {
+	for (MapMovable* obj : map_movable_objs) {
 		obj->move_map_left();
 	}
 }
 
 void Game::move_map_right() noexcept {
-	for (MapMovable* obj: map_movable_objs) {
+	for (MapMovable* obj : map_movable_objs) {
 		obj->move_map_right();
 	}
 }
 
-void Game::move_objs_horizontally() noexcept {
-	for (Movable* obj: movable_objs) {
-		obj->move_horizontally();
+void Game::move_collision_platform() noexcept {
+	for (MovablePlatform* platform : movable_platforms) {
+		const float dx = platform->get_last_move_offset();
+
+		if (dx == 0) {
+			continue;
+		}
+
+		for (Movable* obj : movable_objs) {
+			if (obj->get_bottom() == platform->get_top() &&
+				obj->get_right() > platform->get_left() &&
+				obj->get_left() < platform->get_right()) {
+
+				obj->move_horizontal_offset(dx);
+			}
+		}
 	}
 }
 
+void Game::move_objs_horizontally() noexcept {
+	for (Movable* obj : movable_objs) {
+		obj->move_horizontally();
+	}
+
+}
+
 void Game::move_objs_vertically() noexcept {
-	for (Movable* obj: movable_objs) {
+	for (Movable* obj : movable_objs) {
 		obj->move_vertically();
 	}
 }
@@ -130,13 +160,6 @@ void Game::remove_movable(Movable* obj) {
 	remove_obj(movable_objs, obj);
 }
 
-void Game::remove_objs() {
-	collisionable_objs.clear();
-	map_movable_objs.clear();
-	movable_objs.clear();
-	static_objs.clear();
-	remove_mario();
-}
 
 void Game::remove_static_obj(Rect* obj) {
 	remove_obj(static_objs, obj);
@@ -146,15 +169,30 @@ void Game::start_level() noexcept {
 	is_level_end_ = false;
 }
 
-// ----------------------------------------------------------------------------
-// 									PRIVATE
-// ----------------------------------------------------------------------------
 template<class T>
 void Game::remove_obj(std::vector<T*>& container, T* obj) {
 	container.erase(
 		std::remove(
-			container.begin(), container.end(), obj
-		), 
+			container.begin(),
+			container.end(),
+			obj
+		),
 		container.end()
 	);
+}
+
+void Game::set_level_end_platform(Rect* obj) {
+	level_end_platform = obj;
+}
+
+void Game::remove_objs() {
+	collisionable_objs.clear();
+	map_movable_objs.clear();
+	movable_objs.clear();
+	static_objs.clear();
+	movable_platforms.clear();
+
+	level_end_platform = nullptr;
+
+	remove_mario();
 }
